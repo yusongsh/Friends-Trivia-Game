@@ -74,9 +74,6 @@ let questions = [
 ////////////////////////////////////
 
 let question = document.querySelector(`#question`)
-// const answer = document.querySelectorAll(`.answer-text`)
-// const scores = document.querySelector(`#score`)
-// const progress = document.querySelector(`#progress`)
 let answerOne = document.querySelector(`#answer1`)
 let answerTwo = document.querySelector(`#answer2`)
 let answerThree = document.querySelector(`#answer3`)
