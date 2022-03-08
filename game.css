@@ -1,0 +1,129 @@
+/* Background for the page */
+body {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background-image: url('https://yusong.space/wp-content/uploads/2022/03/maxresdefault.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* /////////////////////////////////////// */
+/* Gamepage styles */
+/* /////////////////////////////////////// */
+/* Grey blured background area */
+.container {
+    background-color: rgba(122, 124, 140, 0.25);
+    backdrop-filter: blur(10px);
+    margin: 100px auto;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
+    padding: 30px 0 60px 0;    
+    border-radius: 20px;
+}
+
+/* question progress container */
+.progress {
+    padding: 20px 150px 20px 0;
+    margin: 0 350px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    color:rgb(0, 0, 0, 0);
+}    
+
+/* score-board container */
+.score-board {
+    padding: 20px 0 20px 0;
+    margin: 0 0 0 150px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}     
+
+#score {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.score {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+
+/* Questions */
+#question {
+    font-size: 24px;
+    margin: 60px 0 20px 70px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Answers container */
+.answer-container{
+    display: inline-block;
+    width: 420px;
+    margin: 10px 10px;
+    background: rgba(122, 124, 140, 0.5);
+    border-radius: 5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.answer-container:hover {
+    transform: scale(1.02);
+}
+
+
+/* Fake link for testing purpose */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* /////////////////////////////////////// */
+/* EngGame styles */
+/* /////////////////////////////////////// */
+
+button {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    filter: blur(0.5px);
+}
+
+.play-again,
+.home {
+    background-color: #C96A25;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px 20px 60px 20px;
+    font-size: 18px;
+    font-family: Permanent Marker;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.play-again:hover,
+.home:hover {
+    transform: scale(1.06);
+}
+
+.end-game-text {
+    font-family: Permanent Marker;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 100px;
+}

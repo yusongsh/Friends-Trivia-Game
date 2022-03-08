@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(29,26,26);
+    color:white;
+    background-image: url('https://yusong.space/wp-content/uploads/2022/03/ezgif.com-gif-maker-3-1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Permanent Marker;
+}
+
+.container {
+    background-color: rgba(122, 124, 140, 0);
+    backdrop-filter: blur(0px);
+    margin: 80px auto;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
+    padding: 60px 0 500px 0;    
+    border-radius: 20px;
+}
+
+
+#titleimage {
+    width: 50%;
+}
+
+
+
+.btn img {
+    width: 25%;
+    height: auto;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 37.5%;
+    /* top: 180px; */
+}
+
+.btn img:hover {
+    transform: scale(1.2);
+    filter: blur(0.1px);
+}
