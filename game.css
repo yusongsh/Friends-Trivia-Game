@@ -28,11 +28,12 @@ body {
 /* question progress container */
 .progress {
     padding: 20px 150px 20px 0;
-    margin: 0 350px 0 0;
+    margin: 0 300px 0 0;
     display: inline-block;
     vertical-align: top;
     text-align: left;
     color:rgba(255, 255, 255);
+    font-size: 14px;
 }    
 
 /* score-board container */
@@ -56,36 +57,37 @@ body {
 
 
 /* Questions */
-#question {
+.question {
     font-size: 24px;
-    margin: 60px 0 20px 70px;
+    margin: 0 0 20px 70px;
     font-size: 30px;
     text-align: left;
     font-family: 'Permanent Marker', cursive;
 }
 
 /* Answers container */
-.answer-container{
+
+
+.answer-text{
     display: inline-block;
     width: 420px;
     margin: 10px 10px;
+    padding: 15px 0;
     background: rgba(122, 124, 140, 0.5);
     border-radius: 5px;
     font-family: 'Permanent Marker', cursive;
     cursor: pointer;
 }
 
-.answer-container:hover {
+.answer-text:hover {
     transform: scale(1.02);
 }
 
 
-/* Fake link for testing purpose */
-a {
-    text-decoration: none;
-    color: white;
+/* hide unnecessary features */
+#btn {
+    display: none;
 }
-
 
 
 /* /////////////////////////////////////// */

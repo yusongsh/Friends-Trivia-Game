@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="game.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
     <title>Ultimate-trivia-quiz-Game</title>
 </head>
 <body>
-    <section class="container">
-        <!-- Status bar & score board -->
-        <div id="game" class="game-progress score">
-            <div class="progress">
-                <h2 id="progress">Question 1/10</h2>
+        <section class="container">
+            <!-- Status bar & score board -->
+            <div id="game" class="game-progress score">
+                <div class="progress">
+                    <h2 id="progress">Question 1/10</h2>
+                </div>
+                <div class="score-board">
+                    <h2 class="score">Score</h2>
+                    <p id="score">0</p>
+                </div>
             </div>
-            <div class="score-board">
-                <h2 class="score">Score</h2>
-                <p id="score">0</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info"></div>
             </div>
         </div>
-
-        <!-- Questions and answers -->
         <div class="question_container">
-            <div id="question">1. Question?</div>
-            <div class="answer-container">
-                <p class="answer-text" id="answer1">Answer1</p>
+                <h2 class="question"></h2>
+                <p class="answer-container">
+                        <span class="answer-text" id="one"></span>
+                        <span class="answer-text" id="two"></span>
+                        <span class="answer-text" id="three"></span>
+                        <span class="answer-text" id="four"></span>
+                </p>
+        </div>
+            <div class="buttons" id="btn">
+                <button class="prev">Prev</button>
+                <button class="reset hide">Reset</button>
             </div>
-            <div class="answer-container">
-                <p class="answer-text" id="answer2">Answer2</p>
-            </div>
-            <div class="answer-container">
-                <p class="answer-text" id="answer3">Answer3</p>
-            </div>
-            <div class="answer-container">
-                <p class="answer-text" id="answer4">Answer4</p>
         </div>
     </section>
-
     <script src="game.js"></script>
 </body>
 </html>
