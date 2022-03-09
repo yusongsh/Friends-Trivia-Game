@@ -2,18 +2,12 @@
 let questions = [
     {
         question: "1. Whats Joey's special?",
-        answer1: "Bologna sandwich",
-        answer2: "2 Pizzas",
-        answer3: "Macaroni + Cheese",
-        answer4: "Ramen",
+        answer1: [ "Bologna sandwich", "2 Pizzas", "Macaroni + Cheese", "Ramen"],
         correctAnswer: 2,
     },
     {   
         question: "2. How many times was Ross legally divorced?",
-        answer1: "Twice",
-        answer2: "Three times",
-        answer3: "Four times",
-        answer4: "Five times",
+        answer: ["Twice", "Three times", "Four times", "Five times"],
         correctAnswer: 2,
     },
     {   
@@ -50,47 +44,36 @@ let questions = [
     },
     {   
         question: "7. What’s Phoebe’s sister’s name?",
-        answer1: "Amy",
-        answer2: "Ursula",
-        answer3: "Jill",
-        answer4: "Monica",
-        correctAnswer: 2,
+        answer: ["Amy", "Ursula", "Jill", "Monica"],
+        correctAnswer: 1,
     },
     {   
         question: "8. Who hates Thanksgiving?",
-        answer1: "Monica",
-        answer2: "Joey",
-        answer3: "Chandler",
-        answer4: "Ross",
+        answer: ["Monica", "Joey", "Chandler", "Ross"],
         correctAnswer: 3,
     },
 ]
 
 
-// console.log(questions[6].question)
-
-////////////////////////////////////
-//selectors
-////////////////////////////////////
-
-let question = document.querySelector(`#question`)
-let answerOne = document.querySelector(`#answer1`)
-let answerTwo = document.querySelector(`#answer2`)
-let answerThree = document.querySelector(`#answer3`)
-let answerFour= document.querySelector(`#answer4`)
+// console.log(questions[6])
 
 
-function loadGame() {
-    let currentQuestion = questions[1].question
-    question.innerHTML = currentQuestion
-    answerOne.innerHTML = questions[1].answer1
-    answerTwo.innerHTML = questions[1].answer2
-    answerThree.innerHTML = questions[1].answer3
-    answerFour.innerHTML = questions[1].answer4
+
+const answers = document.querySelectorAll(`.answer-text`)
+const question = document.querySelector(`#question`)
+const progress = document.querySelector(`#progress`)
+
+let questionCounter = 0
+let score = 0
+let correctAnswer = false
+
+
+
+startGame()
+
+function startGame() {
+    question.innerHTML = questions[questionCounter].question
+    answers.forEach(function(answer, i) {
+        answer.innerHTML = questions[questionCounter].answer[i]
+    })
 }
-loadGame()
-
-// answerFour.addEventListener("click", () => {
-// 	console.log("clicked element");
-
-
