@@ -43,20 +43,16 @@ let questions = [
 
 
 
-
-
 let questionCount = 0;
 let score = 0;
 let correctAnswer = false;
 
 
-
-// grab html elements
 let choices = document.querySelectorAll('.answer-text');
 let question = document.querySelector('.question')
 let progress = document.querySelector(`#progress`)
 let currentScore = document.querySelector(`#score`)
-let finalScore = document.querySelector(`#end-game-text`)
+
 
 
 window.onload = loadGame();
@@ -64,27 +60,25 @@ window.onload = loadGame();
 
 function loadGame() {
     question.innerText = questions[questionCount].question;
-    choices.forEach(function(choice, i) {
+    choices.forEach((choice, i) => {
         choice.innerText = questions[questionCount].choices[i];
     });
-    
     updateProgress();
 }
 
-choices.forEach(function(choice) {
-    choice.addEventListener('click', scoring);
-});
-
-
 
 function updateProgress() {
-  progress.innerHTML = `Questions ${questionCount+1}/8`
+    progress.innerHTML = `Questions ${questionCount+1}/8`
 }
 
-function scoring() {
+choices.forEach(choice => {
+    choice.addEventListener('click', scoreBoard);
+});
+
+//////line 81, credit to Louis, using 'this.'///////////
+function scoreBoard() {
     answer = questions[questionCount].answer;
- 
-    if (this.innerText === questions[questionCount].choices[answer]) {
+    if (this.innerText === newFunction()) {
         correctAnswer = true
         score += 100
         currentScore.innerText = score
@@ -92,112 +86,20 @@ function scoring() {
         correctAnswer = false;
     }
     nextQuestion();
-}
 
+    function newFunction() {
+        return questions[questionCount].choices[answer];
+    }
+}
 
 function nextQuestion() {
     questionCount++;
     if (questionCount < 8) {
         loadGame();
     } else if (questionCount === 8) {
+        let finalScore = currentScore.innerHTML
+        window.localStorage.setItem('finalScore',JSON.stringify(finalScore))
         return window.location.assign('/endGame.html')
     }
 }
 
-
-
-function resetQuiz() {
-    
-    renderQuestion();
-}    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// choicesPara = document.getElementsByTagName('p')[1];
-
-// resetButton.addEventListener('click', resetQuiz);
-// let resetButton = document.getElementsByClassName('reset');
-// let prevButton = document.getElementsByClassName('prev');
-
-
-
-
-
-
-
-// the prevButton will only be available to go back one question
-// function prevQuestion() {
-    //     // when the previous question renders, remove the prevButton
-    //     prevFlag = false;
-    
-//     // if the user originally clicked the correctAnswer, remove score
-//     if (correctAnswer) {
-//         correctAnswer = false;
-//         score--;
-//     }
-    
-//     // then go back and render the old question
-//     count--;
-//     renderQuestion();
-// }
-
-
-
-
-
-// function renderCompletion() {
-//     updateProgress();
-    // scorePercentage = Math.round(score/20 * 100) + '%';
-    
-    // // update with a thank you note and the user's percentage
-    // question.innerText = 'Thank you for Completing the Quiz!';
-    // resultsPara.innerText = 'Your score is: ' + scorePercentage;
-    
-    // // reset avail, prevButton and choicesPara are removed
-    // choicesPara.classList.add('hide');
-    // prevButton.classList.add('hide');
-    // resetButton.classList.remove('hide');
-// }
-
-
-
-
-
-// function resetQuiz() {
-    // reset tracking variables
-    // count = 0;
-    // score = 0;
-    // correctAnswer = false;
-    // prevFlag = false;
-    
-    // // resultsPara is hidden
-    // resultsPara.innerText = '';
-    
-    // // choicesPara displays while resetButton is hidden
-    // choicesPara.classList.remove('hide');
-    // resetButton.classList.add('hide');
-    
-//     renderQuestion();
-// }    
-
-
-
-
-// function updateProgress() {
-        // progressPercentage = Math.round((count/20) * 100);
-        // progress.style.width = progressPercentage + '%';
-    // }
