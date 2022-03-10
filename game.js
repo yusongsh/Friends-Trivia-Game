@@ -84,9 +84,12 @@ function updateProgress() {
     progress.innerHTML = `Questions ${questionCount+1}/10`
 }
 
-// function changeColor() {
-//    return document.body.style.color = 'green'
+// const correctAnswerColor = () => {
+//     document.getElementsByClassName('answer-text')
+//     correctAnswerColor.addEventListener('click', document.body.style.color = 'green')
 // }
+
+let correctAnswerColor = document.querySelector('.answer-text')
 
 
 //////line 81, credit to Louis(A friend of mine, fellow GA students).///////////

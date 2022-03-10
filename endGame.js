@@ -4,10 +4,15 @@ const endGameMessage = document.querySelector(`#end-game-message`)
 
 
 
-let storedScore = localStorage.getItem('finalScore')
+const storedScore = localStorage.getItem('finalScore')
     totalScore.innerHTML = `${storedScore}`
-    // if (storedScore == 100|| storedScore == 200 || storedScore == 300) {
-    //     endGameMessage.innerHTML = `You only got a few, need to watch more episode`
+
+
+    // console.log(storedScore)
+    // if (storedScore == "100" || storedScore == "200" || storedScore == "300" || storedScore == "400") {
+    //     endGameMessage.innerHTML = `You only got a few, need to watch more episodes`
+    // } else if (storedScore == "500" || storedScore == "600" || storedScore == "700") {
+    //     endGameMessage.innerHTML = `Not bad`
     // } else {
     //     endGameMessage.innerHTML = `That's impressive`
     // }
