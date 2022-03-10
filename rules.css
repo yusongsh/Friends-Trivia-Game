@@ -1,9 +1,10 @@
-body {
-    background-color: rgb(0, 0, 0);
-    color:white;
+body, html {
+    height: 100%;
+    margin: 0;
     background-image: url('https://yusong.space/wp-content/uploads/2022/03/maxresdefault.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     font-family: Permanent Marker;
 }
 
@@ -19,9 +20,14 @@ body {
     border-radius: 20px;
 }
 
-ul li {
+.rules{
+    margin: 0 40px;
+}
+
+li {
     list-style-type: circle;
     list-style: inside;
+    color: white;
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 0.2em;
@@ -29,6 +35,7 @@ ul li {
 }
 
 h1 {
+    color: white;
     font-size: 36px;
     line-height: 52px;
     letter-spacing: 0.2em;
@@ -51,3 +58,61 @@ h1 {
     transform: scale(1.1);
     filter: blur(0.1px);
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    body{
+        background-position: center bottom;
+    }
+    .container {
+        margin: 50px auto;
+        width: 85%;
+        border-radius: 10px;
+    }
+    h1 {
+        color: white;
+        font-size: 18px;
+    }
+    ul li {
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+    .btn-small img {
+        width: 100px;
+    }
+    .rules{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .container {
+        margin: 70px auto;
+        width: 90%;
+        border-radius: 15px;
+        }
+    h1 {
+        color: white;
+        font-size: 20px;
+    }
+    ul{
+        font-size: 18px;
+        margin: 0 10px;
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding-left: 0;
+        }
+        .btn-small img {
+            width: 100px;
+        }
+        .rules{
+            margin: 0 20px;
+        }
+}
+

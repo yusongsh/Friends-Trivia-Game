@@ -1,18 +1,20 @@
 /* Background for the page */
-body {
-    background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
+body, html {
+    height: 100%;
+    margin: 0;
     background-image: url('https://yusong.space/wp-content/uploads/2022/03/maxresdefault.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Fredoka', sans-serif;
-    text-align: center;
-    font-size: 18px;
+    background-position: center center;
+    font-family: Permanent Marker;
+    color: white;
 }
 
 /* /////////////////////////////////////// */
 /* Gamepage styles */
 /* /////////////////////////////////////// */
+
+
 /* Grey blured background area */
 .container {
     background-color: rgba(122, 124, 140, 0.25);
@@ -33,8 +35,11 @@ body {
     vertical-align: top;
     text-align: left;
     color:rgba(255, 255, 255);
-    font-size: 14px;
-}    
+}  
+
+#progress {
+    font-size: 24px;
+}
 
 /* score-board container */
 .score-board {
@@ -84,10 +89,18 @@ body {
 }
 
 
-/* hide unnecessary features */
-#btn {
-    display: none;
+
+/* Testing button background color */
+.correctAnswer {
+    background: rgba(0, 255, 94, 0.5);
 }
+
+.wrongAnswer {
+    background: rgba(255, 4, 0, 0.5);
+}
+
+
+
 
 
 /* /////////////////////////////////////// */
@@ -132,5 +145,92 @@ button {
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* Media quary for game page */
+@media screen and (max-width: 1000px) {
+    .progress {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+    .score-board {
+        padding: 0 0 20px 0;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 20%;
+    }     
+    #game {
+        margin-bottom: 50px;
+    }
+    .question {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .container {
+        width: 80%;
+    }
+    .answer-text {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 86%;
+    }
+    #progress{
+        font-size: 18px;
+    }
+    #score{
+        font-size: 18px;
+    }
+    .answer-text {
+        width: 240px;
+        font-size: 14px;
+    }
+    .question {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+/* Media quary for EndGame page */
+@media screen and (max-width: 483px) { 
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin: 100px 10px 0 10px;
+    }
+    button {
+        margin: 0;
+    }
+    .play-again,    
+    .home {
+        width: 220px;
+        margin: 20px;
+    }
+    .home {
+        margin-bottom: 80px;
+    }
+
+
 }

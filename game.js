@@ -84,26 +84,38 @@ function updateProgress() {
     progress.innerHTML = `Questions ${questionCount+1}/10`
 }
 
-// const correctAnswerColor = () => {
-//     document.getElementsByClassName('answer-text')
-//     correctAnswerColor.addEventListener('click', document.body.style.color = 'green')
-// }
 
-let correctAnswerColor = document.querySelector('.answer-text')
-
-
-//////line 81, credit to Louis(A friend of mine, fellow GA students).///////////
+///////Credit to Louis(A friend of mine, who helped me figured out this section).///////////
 function scoreBoard() {
     let answer = questions[questionCount].answer;
     if (this.innerText === questions[questionCount].choices[answer]) {
         correctAnswer = true
         score += 100
         currentScore.innerText = score
+      
     } else {
         correctAnswer = false;
     }
-    nextQuestion();
+
+    nextQuestion()
 }
+    
+    /////////testing function/////////
+    //////////////////////////////////
+    
+///////////////////////////////////////////
+
+// function changeColor() {
+//     if (correctAnswer = true ) {
+//     choices.classList.add = (`correctAnswer`)
+// } else {
+//     choices.classList.add =(`wrongAnswer`)
+// }
+
+// 
+// }
+
+
 
 
 function nextQuestion() {
@@ -111,8 +123,8 @@ function nextQuestion() {
     if (questionCount < 10) {
         loadGame();
     } else if (questionCount === 10) {
-        let finalScore = currentScore.innerHTML
-        window.localStorage.setItem('finalScore',JSON.stringify(finalScore))
+        let finalScore = currentScore.innerText
+        localStorage.setItem("totalscore", finalScore)
         return window.location.assign('/endGame.html')
     }
 }
