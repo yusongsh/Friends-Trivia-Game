@@ -5,7 +5,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    font-family: Permanent Marker;
+    font-family: 'Permanent Marker', Arial;
     color: white;
     background-color: black;
 }
@@ -91,6 +91,7 @@ html {
         padding: 60px 0 120px 0;  
     }
     .btn img {
+        margin-top: 10%;
         width: 70%;
         left: 15%;
         bottom: 10%;
