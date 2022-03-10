@@ -39,6 +39,16 @@ let questions = [
         choices: ["Monica", "Joey", "Chandler", "Ross"],
         answer: 2,
     },
+    {   
+        question: "9. Ross says whose name at the altar in London?",
+        choices: ["Monica", "Rachel", "Phoebe", "Susan"],
+        answer: 1,
+    },
+    {   
+        question: "10. What year did Friends first premiere?",
+        choices: ["1992", "1993", "1994", "1995"],
+        answer: 2,
+    },
 ]
 
 
@@ -66,19 +76,23 @@ function loadGame() {
     updateProgress();
 }
 
-
-function updateProgress() {
-    progress.innerHTML = `Questions ${questionCount+1}/8`
-}
-
 choices.forEach(choice => {
     choice.addEventListener('click', scoreBoard);
 });
 
-//////line 81, credit to Louis, using 'this.'///////////
+function updateProgress() {
+    progress.innerHTML = `Questions ${questionCount+1}/10`
+}
+
+// function changeColor() {
+//    return document.body.style.color = 'green'
+// }
+
+
+//////line 81, credit to Louis(A friend of mine, fellow GA students).///////////
 function scoreBoard() {
-    answer = questions[questionCount].answer;
-    if (this.innerText === newFunction()) {
+    let answer = questions[questionCount].answer;
+    if (this.innerText === questions[questionCount].choices[answer]) {
         correctAnswer = true
         score += 100
         currentScore.innerText = score
@@ -86,17 +100,14 @@ function scoreBoard() {
         correctAnswer = false;
     }
     nextQuestion();
-
-    function newFunction() {
-        return questions[questionCount].choices[answer];
-    }
 }
+
 
 function nextQuestion() {
     questionCount++;
-    if (questionCount < 8) {
+    if (questionCount < 10) {
         loadGame();
-    } else if (questionCount === 8) {
+    } else if (questionCount === 10) {
         let finalScore = currentScore.innerHTML
         window.localStorage.setItem('finalScore',JSON.stringify(finalScore))
         return window.location.assign('/endGame.html')

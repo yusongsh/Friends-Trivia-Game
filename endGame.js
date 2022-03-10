@@ -1,5 +1,4 @@
 const totalScore = document.querySelector(`#totalScore`)
-// const endGameText = document.querySelector(`#end-game-text`)
 const endGameMessage = document.querySelector(`#end-game-message`)
 
 
