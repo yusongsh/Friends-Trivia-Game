@@ -154,11 +154,17 @@ h2 {
 
 
 /* Media quary for game page */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .progress {
         padding: 0;
         margin: 0;
         width: 50%;
+    }
+    .container {
+        width: 90%;
+    }
+    .answer-text {
+        width: 300px;
     }
     .score-board {
         padding: 0 0 20px 0;
