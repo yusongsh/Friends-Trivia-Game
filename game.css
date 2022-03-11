@@ -1,4 +1,4 @@
-/* Background for the page */
+/* Root Style for both pages */
 body, html {
     height: 100%;
     margin: 0;
@@ -9,6 +9,11 @@ body, html {
     font-family: 'Permanent Marker', Arial;
     color: white;
 }
+
+
+
+
+
 
 /* /////////////////////////////////////// */
 /* Gamepage styles */
@@ -27,6 +32,7 @@ body, html {
     border-radius: 20px;
 }
 
+
 /* question progress container */
 .progress {
     padding: 20px 150px 20px 0;
@@ -40,6 +46,7 @@ body, html {
 #progress {
     font-size: 24px;
 }
+
 
 /* score-board container */
 .score-board {
@@ -70,9 +77,8 @@ body, html {
     font-family: 'Permanent Marker', Arial;
 }
 
+
 /* Answers container */
-
-
 .answer-text{
     display: inline-block;
     width: 420px;
@@ -89,22 +95,22 @@ body, html {
 }
 
 
-
 /* Testing button background color */
-.correctAnswer {
+/* .correctAnswer {
     background: rgba(0, 255, 94, 0.5);
 }
 
 .wrongAnswer {
     background: rgba(255, 4, 0, 0.5);
-}
+} */
+
 
 
 
 
 
 /* /////////////////////////////////////// */
-/* EngGame styles */
+/* EngGame Page styles */
 /* /////////////////////////////////////// */
 
 button {
@@ -132,8 +138,7 @@ button {
 }
 
 .play-again:hover,
-.home:hover
-{
+.home:hover {
     transform: scale(1.06);
 }
 
@@ -152,6 +157,12 @@ h2 {
 
 
 
+
+
+
+/* /////////////////////////////////////////// */
+/* Responsive Media Query */
+/* /////////////////////////////////////////// */
 
 
 /* Media quary for game page */
@@ -218,10 +229,6 @@ h2 {
     iframe {
         display: none;
     }
-}
-
-@media screen and (min-width: 1400px) {
-
 }
 
 

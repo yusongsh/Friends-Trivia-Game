@@ -1,14 +1,16 @@
+/////////Query selectors/////////
 const totalScore = document.querySelector(`#totalScore`)
 const endGameMessage = document.querySelector(`#end-game-message`)
 
 
 
-
+/////////Assign local storage value to storedScore/////////
 const storedScore = localStorage.getItem('totalscore')
     totalScore.innerHTML = `${storedScore}`
 
 
-    console.log(storedScore)
+
+/////////If else statement to say different things based on different final scores /////////
     if (storedScore >= 100 && storedScore < 400 ) {
         endGameMessage.innerHTML = `You only got a few correct, need to watch more episodes! click here to watch more`
     } else if (storedScore >= 400 && storedScore < 700) {

@@ -1,3 +1,4 @@
+/////////Questions stored in an array/////////
 let questions = [
     {
         question: "1. Whats Joey's special?",
@@ -57,7 +58,7 @@ let questionCount = 0;
 let score = 0;
 let correctAnswer = false;
 
-
+/////////Query selectors/////////
 let choices = document.querySelectorAll('.answer-text');
 let question = document.querySelector('.question')
 let progress = document.querySelector(`#progress`)
@@ -68,6 +69,7 @@ let currentScore = document.querySelector(`#score`)
 window.onload = loadGame();
 
 
+/////////When page opens, load empty container with questions/////////
 function loadGame() {
     question.innerText = questions[questionCount].question;
     choices.forEach((choice, i) => {
@@ -76,16 +78,21 @@ function loadGame() {
     updateProgress();
 }
 
+
+/////////Add event listener to each button/////////
 choices.forEach(choice => {
     choice.addEventListener('click', scoreBoard);
 });
 
+
+/////////Update score /////////
 function updateProgress() {
     progress.innerHTML = `Questions ${questionCount+1}/10`
 }
 
 
-///////Credit to Louis(A friend of mine, who helped me figured out this section).///////////
+///////// When clicked the correct answer, score goes up, progress update, nothing happens if wrong answer clicked /////////
+/////////Credit to Louis(A friend, fellow GA student, who helped me figured this out)/////////
 function scoreBoard() {
     let answer = questions[questionCount].answer;
     if (this.innerText === questions[questionCount].choices[answer]) {
@@ -96,28 +103,28 @@ function scoreBoard() {
     } else {
         correctAnswer = false;
     }
-
     nextQuestion()
 }
+
+
     
     /////////testing function/////////
     //////////////////////////////////
+    //////////Didn't work/////////////
     
 ///////////////////////////////////////////
 
 // function changeColor() {
 //     if (correctAnswer = true ) {
 //     choices.classList.add = (`correctAnswer`)
-// } else {
+//     } else {
 //     choices.classList.add =(`wrongAnswer`)
+//     }
 // }
 
-// 
-// }
 
 
-
-
+/////////Assign next question after answers selected, store the final score at local storage/////////
 function nextQuestion() {
     questionCount++;
     if (questionCount < 10) {

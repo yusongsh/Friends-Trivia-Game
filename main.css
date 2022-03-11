@@ -10,7 +10,6 @@ html {
     background-color: black;
 }
 
-
 .container {
     background-color: rgba(122, 124, 140, 0);
     backdrop-filter: blur(0px);
@@ -18,17 +17,13 @@ html {
     text-align: center;
     text-decoration: none;
     width: 70%;
-    /* height: 100px; */
     padding: 60px 0 500px 0;    
     border-radius: 20px;
 }
 
-
 #titleimage {
     width: 800px;
 }
-
-
 
 .btn img {
     width: 25%;
@@ -54,6 +49,12 @@ html {
 
 
 
+
+/* /////////////////////////////////////////// */
+/* Responsive Media Query */
+/* /////////////////////////////////////////// */
+
+/* Screen size over 2K */
 @media screen and (max-width: 3500px ) {
     .btn img {
         width: 20%;
@@ -63,6 +64,7 @@ html {
 
 }
 
+/* Desktop/laotop screen size */
 @media screen and (max-width: 2000px ) {
     #titleimage {
         width: 600px;
@@ -72,9 +74,9 @@ html {
         left: 35%;
         bottom: 10%;
     }
-    
 }
 
+/* Tablet screen */
 @media screen and (max-width: 744px) {
     #titleimage {
         width: 400px;
@@ -90,6 +92,7 @@ html {
     }
 }
 
+/* Mobile screen */
 @media screen and (max-width: 480px) {
     #titleimage {
         width: 70%;
@@ -114,5 +117,4 @@ html {
         margin: 20% auto;
         padding: 10%;
     }
-
 }
