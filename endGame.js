@@ -10,7 +10,7 @@ const storedScore = localStorage.getItem('totalscore')
 
     console.log(storedScore)
     if (storedScore >= 100 && storedScore < 400 ) {
-        endGameMessage.innerHTML = `You only got a few correct, need to watch more episodes!`
+        endGameMessage.innerHTML = `You only got a few correct, need to watch more episodes! click here to watch more`
     } else if (storedScore >= 400 && storedScore < 700) {
         endGameMessage.innerHTML = `Not bad, want to try again?`
     } else {

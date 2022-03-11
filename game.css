@@ -108,7 +108,7 @@ body, html {
 /* /////////////////////////////////////// */
 
 button {
-    width: 150px;
+    width: 200px;
     height: auto;
     text-align: center;
     display: inline-block;
@@ -132,7 +132,8 @@ button {
 }
 
 .play-again:hover,
-.home:hover {
+.home:hover
+{
     transform: scale(1.06);
 }
 
@@ -240,7 +241,8 @@ h2 {
         margin: 0;
     }
     .play-again,    
-    .home {
+    .home
+     {
         width: 220px;
         margin: 20px;
     }
