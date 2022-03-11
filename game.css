@@ -250,5 +250,17 @@ h2 {
         margin-bottom: 80px;
     }
 
+}
+
+@media screen and (max-width: 700px) { 
+    button {
+        margin: 0;
+    }
+    .play-again,    
+    .home
+     {
+        width: 220px;
+        margin: 20px;
+    }
 
 }

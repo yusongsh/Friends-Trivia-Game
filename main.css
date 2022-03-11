@@ -53,13 +53,23 @@ html {
 }
 
 
-@media screen and (max-width: 1000px ) {
+
+@media screen and (max-width: 3500px ) {
+    .btn img {
+        width: 20%;
+        left: 40%;
+        bottom: -70%;
+    }
+
+}
+
+@media screen and (max-width: 2000px ) {
     #titleimage {
         width: 600px;
     }
     .btn img {
-        width: 50%;
-        left: 22.5%;
+        width: 30%;
+        left: 35%;
         bottom: 10%;
     }
     
