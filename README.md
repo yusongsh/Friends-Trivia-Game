@@ -4,7 +4,7 @@
 ### By: Yusong Shi
 ***
 
-![movie](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMpWgFcYiV0MThcMMAVihr_5Zx2twoZ2Q_kVZOsVZ9nH1hmJZj)
+![movie](https://yusong.space/wp-content/uploads/2022/03/Friends-Project-Cover_.png)
 ##### Image credit: National Broadcasting Company([NBC](https://www.nbc.com/))
 ***
 
@@ -45,6 +45,6 @@ Please click for for the [Project 1 - Progress Tracker](https://www.figma.com/pr
 ### ***Figma link for the game prototype***
 Please click for for the [Prototype of the game](https://www.figma.com/proto/3wF9U6tt05lgdkn1tJaSX6/Untitled?page-id=0%3A1&node-id=4%3A2&viewport=383%2C48%2C0.25&scaling=scale-down&starting-point-node-id=4%3A2)<br>
 
-#### Note: both links will lead you into the same file. There are 2 different flows, Flow 1 is the prototype of the project, Flow 2 is the Progress Tracker
+##### Note: both links will lead you into the same file. There are 2 different flows: Prototype & Progress Tracker
 
 
