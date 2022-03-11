@@ -12,7 +12,7 @@ const storedScore = localStorage.getItem('totalscore')
 
 /////////If else statement to say different things based on different final scores /////////
     if (storedScore >= 100 && storedScore < 400 ) {
-        endGameMessage.innerHTML = `You only got a few correct, need to watch more episodes! click here to watch more`
+        endGameMessage.innerHTML = `You only got a few correct, need to watch more episodes!`
     } else if (storedScore >= 400 && storedScore < 700) {
         endGameMessage.innerHTML = `Not bad, want to try again?`
     } else {
