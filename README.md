@@ -6,24 +6,36 @@
 
 ![movie](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMpWgFcYiV0MThcMMAVihr_5Zx2twoZ2Q_kVZOsVZ9nH1hmJZj)
 ##### Image credit: National Broadcasting Company([NBC](https://www.nbc.com/))
+***
 
 ## ***Description***: 
-#### It's been a while since the show aired, but Friends is still a lot of people's favorite show of all time and there are a lot of famous and memorable moments from different episodes. This game is to test your Friends knowlege. Enjoy the trivia game!
+#### It's been a while since the show aired, but Friends is still a lot of people's favorite show of all time, and there are a lot of famous and memorable moments from different episodes. This game is to test your Friends' knowledge. Enjoy the trivia game and see if you can get the highest score!
 ***
 
 ## ***Game Plan***
 ### ***Home page***
-> - Game name, rules, an gif or video of Friends(TV show) in the background, button for starting. 
+ - Game name, rules, an gif. or a video of Friends(TV show) in the background, a button for starting. 
 <br>
 
 ### ***Game page***  
-> - One question per page. <br>
-> - Scoreboard on the upper right corner <br>
-> - Shows current process of the game, e.g, "Question 1/10" on upper left corner <br>
-> - If clicked the correct answer, add a green border to the answer selected, add 100 points to the scoreboard, jump to the next question. <br>
-> - If clicked the wrong answer, add a red border to the answer selected, no points added to the scoreboard, jumps to next question. <br>
-> - When the game is finished, option to enter your name for leaderboards, or return home to play again. <br>
-> - If the name entered for leaderboards, show leader borders, have the option to return home to play again.<br>
+- One question per page. <br>
+- Scoreboard on the upper right corner <br>
+- Shows current process of the game, e.g, "Question 1/10" on upper left corner <br>
+- If clicked the correct answer, add a green border to the answer selected, add 100 points to the scoreboard, jump to the next question. <br>
+- If clicked the wrong answer, add a red border to the answer selected, no points added to the scoreboard, jumps to next question. <br>
+- When the game is finished, option to enter your name for leaderboards, or return home to play again. <br>
+- If the name entered for leaderboards, show leader borders, have the option to return home to play again.<br>
+
+### ***EndGame page***  
+- Have the scoreboard showing with a message saying different things based on the score. 
+- Return to the home button
+- Start the game again button 
+
+## ***Game Rules***
+> - No timer, take as much time as you need.
+> - You only get one chance to select the correct answer.
+> - You'll get 100 points if you answer correctly.
+> - Have fun!
 ***
 
 ### ***Progress board for plan details and progress***

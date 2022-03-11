@@ -8,7 +8,7 @@ let questions = [
         question: "2. How many times was Ross legally divorced?",
         choices: ["Twice", "Three times", "Four times", "Five times"],
         answer: 1,
-    },
+    }, 
     {   
         question: "3. How many sisters does Joey have?",
         choices: ["2", "4", "7", "6"],
